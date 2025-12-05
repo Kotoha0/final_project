@@ -60,26 +60,6 @@ section {
     background-color: #fff;
 }
 
-#recipe-results, #ingredient-details, #recommendation-list, #saved-recipes, #shared-recipes {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-
-#recipe-notes-list {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-}
-
-#content {
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: center;
-}
-
 input, textarea {
     margin: 5px 0;
     padding: 5px;
@@ -101,7 +81,4 @@ li {
     margin-bottom: 10px;
     border-bottom: 1px solid #eee;
     padding-bottom: 5px;
-}
-.comment-section {
-    margin-left: 20px;
 }

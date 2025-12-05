@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leftover Buddy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Leftover Buddy</h1>
+        <p>Reduce food waste by tracking, sharing, and repurposing food creatively!</p>
+        <nav>
+            <ul id="nav-bar">
+                <li><a href="#" data-section="my-recipe-notes">My Recipe Notes</a></li>
+                <li><a href="#" data-section="others-recipes">Check Others' Recipes</a></li>
+                <li><a href="#" data-section="post-recipe">Post a Recipe</a></li>
+                <li><a href="#" data-section="saved-recipes">Saved Recipes / Likes</a></li>
+                <li><a href="#" data-section="ingredient-log">Ingredient Log</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="global-search" placeholder="Search recipes or ingredients...">
+    </header>
+
+    <main>
+        <!-- My Recipe Notes Section -->
+        <section id="my-recipe-notes" class="hidden">
+            <h2>My Recipe Notes</h2>
+            <form id="recipe-notes-form">
+                <input type="text" id="note-title" placeholder="Note Title" required>
+                <textarea id="note-content" placeholder="Write your recipe note here..." required></textarea>
+                <button type="submit">Save Note</button>
+            </form>
+            <div id="my-recipe-notes-list"></div>
+        </section>
+
+        <section id="others-recipes" class="hidden">
+            <h2>Others' Recipes</h2>
+            <div id="others-recipes-list"></div>
+        </section>
+
+        <section id="post-recipe" class="hidden">
+            <h2>Post a Recipe</h2>
+            <form id="post-recipe-form">
+                <input type="text" id="recipe-title" placeholder="Recipe Title" required>
+                <textarea id="recipe-ingredients" placeholder="Ingredients (comma-separated)" required></textarea>
+                <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+                <button type="submit">Post Recipe</button>
+            </form>
+        </section>
+
+        <section id="saved-recipes" class="hidden">
+            <h2>Saved Recipes / Likes</h2>
+            <div id="saved-recipes-list"></div>
+        </section>
+
+        <section id="ingredient-log" class="hidden">
+            <h2>Ingredient Log</h2>
+            <form id="ingredient-log-form">
+                <input type="text" id="ingredient-input" placeholder="Enter an ingredient" required>
+                <button type="submit">Add Ingredient</button>
+            </form>
+            <div id="ingredient-list"></div>
+            <h3>Recipe Suggestions</h3>
+            <div id="ingredient-recipe-suggestions"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
